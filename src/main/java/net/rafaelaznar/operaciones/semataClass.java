@@ -19,7 +19,7 @@ package net.rafaelaznar.operaciones;
 /**
  *
  * @author Sergio Martín Tárraga
- * @version 1.0 Fecha 02-10-2013 02:18h
+ * @version 1.0 Fecha 07-10-2013 02:18h
  */
 public class semataClass {
 

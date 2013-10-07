@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 Sergio
+ * Copyright (C) 2013 Rafael Aznar
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -14,20 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+package net.rafaelaznar.tests;
 
-package net.rafaelaznar.tests
-
-import org.junit.After
-import org.junit.AfterClass
-import org.junit.Before
-import org.junit.BeforeClass
-import org.junit.Test
-import static org.junit.Assert.*
-import net.rafaelaznar.operaciones.semataClass
+import net.rafaelaznar.operaciones.semataClass;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
- * @author Sergio
+ * @author Sergio Martín Tárraga
+ * @version 1.0
+ * Fecha 07-10-13 03:16h
  */
 class semataClassTest {
 
