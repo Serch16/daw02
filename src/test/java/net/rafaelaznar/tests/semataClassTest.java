@@ -27,10 +27,9 @@ import static org.junit.Assert.*;
 /**
  *
  * @author Sergio Martín Tárraga
- * @version 1.0
- * Fecha 07-10-13 03:16h
+ * @version 1.0 Fecha 07-10-13 03:16h
  */
-class semataClassTest {
+public class semataClassTest {
 
     public semataClassTest() {
         System.out.println("NewEmptyJUnitTest");
@@ -49,33 +48,25 @@ class semataClassTest {
     @Before
     public void setUp() {
         System.out.println("before-setUp");
-
     }
 
     @After
     public void tearDown() {
         System.out.println("after-tearDown");
     }
-    
+
     @Test
-    public void testGetNombreApellunoApelldos() {
-        System.out.println("test: GetNombreApellunoApelldos()");
+    public void testGetNombreApellidos() {
+        System.out.println("test: GetNombreApellidos()");
         semataClass oSemata = new semataClass();
         assertNotNull("objeto semata creado", oSemata);
         assertEquals("getNombre: Debe devolver Sergio", oSemata.getNombre(), "Sergio");
-        assertTrue("getApelluno: Debe devolver Martín", "Martín".equals(oSemata.getApelluno()));
-        assertTrue("getApelluno: Debe devolver Tárraga", "Tárraga".equals(oSemata.getApelldos()));
+        assertTrue("getApellido1: Deve devolver Martín", "Martín".equals(oSemata.getApellido1()));
         if (!oSemata.getNombre().equals("Sergio")) {
             fail("getNombre: Nombre distinto de Sergio");
         }
-        if (!oSemata.getApelluno().equals("Martín")) {
-            fail("getApelluno: Primer apellido distinto de Martín");
-        }
-        if (!oSemata.getApelldos().equals("Tárraga")) {
-            fail("getApelldos: Segundo apellido distinto de Tárraga");
-        }
         assertSame("prueba getReference", oSemata, oSemata.getReference());
         semataClass oSemata2 = new semataClass();
-        assertNotSame("No son el mismo nombre", oSemata, oSemata2);
+        assertNotSame("no son el mismo objeto", oSemata, oSemata2);
     }
 }

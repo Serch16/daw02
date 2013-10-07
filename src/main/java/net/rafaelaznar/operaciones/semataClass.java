@@ -24,11 +24,11 @@ package net.rafaelaznar.operaciones;
 public class semataClass {
 
     /**
-     * Declaración de variables
+     * Declaración de Variables.
      */
     private String nombre = "Sergio";
-    private String apelluno = "Martín";
-    private String apelldos = "Tárraga";
+    private String apellido1 = "Martín";
+    private String apellido2 = "Tárraga";
 
     /**
      * Método que obtiene el nombre
@@ -39,11 +39,10 @@ public class semataClass {
         return nombre;
     }
 
-    /**
-     * Método que establece el nombre
-     *
-     * @param nombre
-     */
+  /**
+   * Método que establece el nombre
+   * @param nombre 
+   */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -51,48 +50,53 @@ public class semataClass {
     /**
      * Método que obtiene el primer apellido
      *
-     * @return apelluno
+     * @return Apellido1
      */
-    public String getApelluno() {
-        return apelluno;
+    public String getApellido1() {
+        return apellido1;
     }
 
     /**
      * Método que establece el primer apellido
      *
-     * @param apelluno
+     * @return Apellido2
      */
-    public void setApelluno(String apelluno) {
-        this.apelluno = apelluno;
+    public void setApellido1(String apellido) {
+        this.apellido1 = apellido1;
     }
 
     /**
-     * Método que obtiene el segundo apellido
+     * Método que obtiene el apellido2
      *
-     * @return apelldos
+     * @return Apellido2
      */
-    public String getApelldos() {
-        return apelldos;
+    public String getApellido2() {
+        return apellido1;
     }
 
     /**
-     * Método que establece el segundo apellido
+     * Método que establece el apellido
      *
-     * @param apelldos
+     * @return Apellido2
      */
-    public void setApelldos(String apelldos) {
-        this.apelldos = apelldos;
+    public void setApellido2(String apellido) {
+        this.apellido2 = apellido2;
     }
+
     /**
-     * Método que obtiene el nombre completo bien formateado con espacios
-     * @return nombre + " " + apelluno + " " + apelldos
+     * Método que devuelve el nombre, el primer apellido y el segundo apellido
+     * bien formateados
+     *
+     * @return nombre + apellido1 + apellido2
      */
-    public String getNombreApellunoApelldos() {
-        return nombre + " " + apelluno + " " + apelldos;
+    public String getNombreApellidos() {
+        return nombre + " " + apellido1;
     }
+
     /**
-     * Método que obtiene la referencia a este objeto
-     * @return Esta clase (semataClass)
+     * Para obtener la referencia a este objeto
+     *
+     * @return referencia al objeto
      */
     public semataClass getReference() {
         return this;
