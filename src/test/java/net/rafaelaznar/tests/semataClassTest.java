@@ -61,8 +61,8 @@ class semataClassTest {
     public void testGetNombreApellunoApelldos() {
         System.out.println("test: GetNombreApellunoApelldos()");
         semataClass oSemata = new semataClass();
-        asserNotNull("objeto semata creado", oSemata);
-        asserEquals("getNombre: Debe devolver Sergio", oSemata.getNombre(), "Sergio");
+        assertNotNull("objeto semata creado", oSemata);
+        assertEquals("getNombre: Debe devolver Sergio", oSemata.getNombre(), "Sergio");
         assertTrue("getApelluno: Debe devolver Martín", "Martín".equals(oSemata.getApelluno()));
         assertTrue("getApelluno: Debe devolver Tárraga", "Tárraga".equals(oSemata.getApelldos()));
         if (!oSemata.getNombre().equals("Sergio")) {
@@ -76,6 +76,6 @@ class semataClassTest {
         }
         assertSame("prueba getReference", oSemata, oSemata.getReference());
         semataClass oSemata2 = new semataClass();
-        assertNotSame("No son el mismo nombre");
+        assertNotSame("No son el mismo nombre", oSemata, oSemata2);
     }
 }
