@@ -23,6 +23,7 @@ import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 import static org.junit.Assert.*
+import net.rafaelaznar.operaciones.semataClass
 
 /**
  *
@@ -66,14 +67,14 @@ class semataClassTest {
         if (!oSemata.getNombre().equals("Sergio")) {
             fail("getNombre: Nombre distinto de Sergio");
         }
-         if (!oSemata.getApelluno().equals("Martín")) {
+        if (!oSemata.getApelluno().equals("Martín")) {
             fail("getApelluno: Primer apellido distinto de Martín");
         }
-          if (!oSemata.getApelldos().equals("Tárraga")) {
+        if (!oSemata.getApelldos().equals("Tárraga")) {
             fail("getApelldos: Segundo apellido distinto de Tárraga");
         }
         assertSame("prueba getReference", oSemata, oSemata.getReference());
-        semataClass oSemataCompareTo = new semataClass();
+        semataClass oSemata2 = new semataClass();
         assertNotSame("No son el mismo nombre");
     }
 }
